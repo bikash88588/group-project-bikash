@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kids Code Library</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0cc0df;
+    }
+
+    header {
+      min-height: 40vh;
+      background: url('KIDS CODING CLASSROOM.png') no-repeat center center;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 1em 2em;
+      position: relative;
+    }
+
+    .nav-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2em;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .main {
+      padding: 2em;
+      text-align: center;
+    }
+
+    
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      margin-top: 2em;
+      flex-wrap: wrap;
+    }
+
+    .feature-box {
+      background: white;
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 250px;
+      text-align: center;
+    }
+
+    .feature-btn {
+      display: inline-block;
+      margin-top: 0.5em;
+      padding: 0.5em: 1em;
+      background-color: #0cc0df;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+      transform: scale(1.5);
+    }
+    .feature-btn:hover{
+      background-color: #0ba8b5;
+    }
+
+
+
+    footer {
+      background: url('KIDS CODING CLASSROOM_footer.png') no-repeat right center;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    footer small {
+      display: block;
+      margin-top: 1em;
+    }
+
+    /* responsive element adjustment need to check if applicable */
+    @media (max-width: 600px) {
+      header {
+        min-height: 30vh;
+        padding: 2em 1em;
+        background-position: top center;
+        background-size: cover;
+        align-items: center;
+        text-align: center;
+      }
+
+      .nav-container {
+        justify-content: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature-box {
+        width: 90%;
+        display: flex;
+        text-align: center;
+      }
+    }
+    .feature-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.feature-image img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.feature-image img:hover {
+  transform: scale(1.3);
+}
+
+.emoji {
+  display: inline-block;   
+  font-size: 1em;          
+  transform: scale(2);    
+  line-height: 1;          
+  transform-origin: center;
+}
+
+  </style>
+}
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <nav>
+        <ul>
+          <li><a href=https://arc-csec-jna.github.io/Classproject/>Home</a></li>
+          <li><a href=https://illustrious-biscuit-b97c47.netlify.app/>Learn to Code</a></li>
+          <li><a href="#">Gamified</a></li>
+          <li><a href="#">Resource</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="main">
+  <h1>Gamified Activities 🎮</h1>
+  <p>Learn programming concepts through exciting games and interactive games and challenge.</p>
+    </div>
+
+    <div class="features">
+      <div class="feature-box">
+        <div class="feature-image">
+          <h1><a herf="#" class="emoji">🤖</a></h1>
+      </div>     
+        <h2>Robot Navigator</h2>
+        <p>Guide a robot through mazes using conditional statements and logical thinking.</p><br>
+        <a href="https://robocode.sourceforge.io/" class="feature-btn">Select</a>
+
+      </div>
+      <div class="feature-box">
+        <div class="feature-image">
+          <h1><a herf="#" class="emoji">🧊</a></h1>
+      </div>     
+        <h2>Variables</h2>
+        <p>Discover how to create beautiful patterns and artwork using variables using Java.</p><br>
+        <a href="https://www.greenfoot.org/door" class="feature-btn">Select</a>
+      </div>
+      <div class="feature-box">
+        <div class="feature-image">
+          <h1><a herf="#" class="emoji">🧱</a></h1>
+      </div>     
+        <h2>Block Builder</h2>
+        <p>Solve puzzles by arranging blocks block in the correct sequence.</p><br>
+        <a href="https://codegym.cc/" class="feature-btn">Select</a>
+      </div>
+      <div class="feature-box">
+        <div class="feature-image">
+        <h1><a herf="#" class="emoji">⭐</a></h1>
+      </div>     
+        <h2>Code Quest</h2>
+        <p>Embark on an adventure where coding skills unlock new levels and treasures.</p><br>
+        <a href="https://www.codewars.com/" class="feature-btn">Select</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Kids Code Library – Empower Young Minds Through Code</p>
+    <small>© Developed by Team 1 – No ChatGPT used in our project.</small>
+  </footer>
+</body>
+
+</html>
